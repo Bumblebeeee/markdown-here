@@ -69,10 +69,10 @@
                                             .getService(Components.interfaces.nsIPromptService);
                     prompts.alert(null, 'Markdown Here', 'Sorry, the options page is not supported for Postbox.');
                 }
-                else {
+                /*else {
                     var win = windowMediator.getMostRecentWindow('navigator:browser');
                     win.gBrowser.selectedTab = win.gBrowser.addTab(optionsUrl);
-                }
+                }*/
                 /* Close the stub prefs dialog that will have opened. */
                 window.close();
         </em:optionsURL>
