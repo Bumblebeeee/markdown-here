@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="chrome://markdown_here/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://markdown_here/locale/overlay.dtd">
+
+<?xml-stylesheet href="chrome://markdown_here/skin/toolbar.css" type="text/css"?>
+
+<overlay id="markdown_here-overlay-zotero" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <!-- <menupopup id="zotero-itemmenu">
+    <menuseparator id="id-markdown_here-separator"/>
+    <menuitem id="id-markdown_here" label="&markdown_hereContext.label;"
+              accesskey="&markdown_hereContext.accesskey;"
+              insertafter="context-markdown_here-separator"
+              class="menuitem-iconic"
+              image="resource://markdown_here_common/images/icon16.png"
+              oncommand="markdown_here.onMenuItemCommand(event)"/>
+  </menupopup> -->
+
+  <toolbar id="zotero-toolbar" class="toolbar toolbar-primary">
+    <!-- insertafter="zotero-tb-sync" -->
+      <toolbarbutton id="toolbarButton-markdown_here-zotero" class="zotero-tb-button"
+              label="&markdown_hereContext.label;"
+              accesskey="&markdown_hereContext.accesskey;"
+              insertafter="context-markdown_here-separator"
+              image="resource://markdown_here_common/images/markdown2.png"
+              oncommand="markdown_here.onMenuItemCommand(event)">
+      </toolbarbutton>
+  </toolbar>
+
+  <menupopup id="zotero-tb-actions-popup">
+    <menuitem id="markdown_here-options-zotero" insertafter="zotero-tb-actions-prefs" label="Markdown Options" oncommand="ZoteroPane_Local.loadURI('resource://markdown_here_common/options.html');"/>
+  </menupopup>
+
+
+  <script src="chrome://zotero/content/include.js"/>
+  <script src="chrome://markdown_here/content/ff-overlay.js"/>
+
+</overlay>
+
+
+
+
+<!--
+
+  <hbox id="zotero-item-toolbar" flex="1" align="center">
+
+
+<toolbar id="zotero-toolbar" class="toolbar toolbar-primary">
+<hbox id="zotero-items-toolbar" class="toolbar" align="center" style="width: 822px; margin-right: 1px;">
+  <toolbarbutton id="zotero-tb-advanced-search" class="zotero-tb-button" tooltiptext="Advanced Search" command="cmd_zotero_advancedSearch" oncommand="ZoteroPane_Local.openAdvancedSearchWindow();"></toolbarbutton>
+
+  </hbox>
+  </toolbar>
+ -->
+
+
