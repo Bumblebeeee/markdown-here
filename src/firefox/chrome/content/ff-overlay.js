@@ -228,6 +228,15 @@ var markdown_here = {
           }
         }
       }
+
+      // Zotero toolbar button
+      btn = document.getElementById('toolbarButton-markdown_here-zotero');
+      if (!btn) btn = document.getElementById('toolbarButton-markdown_here-zotero-pressed');
+      if (btn) {
+        var loc = 'resource://markdown_here_common/images/';
+        btn.setAttribute('disabled', !show);
+        btn.setAttribute('image', show ? (loc + "markdown.png") : (loc + "markdown-bw.png"));
+      }
     }
 
     var lastElemChecked, lastRenderable;
@@ -281,3 +290,5 @@ var markdown_here = {
 window.addEventListener('load', function () {
   markdown_here.onLoad();
 }, false);
+
+
