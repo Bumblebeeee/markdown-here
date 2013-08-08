@@ -2,5 +2,7 @@
 node_modules
 Thumbs.db
 
+.gitignore
+*.xpi
 *.sublime-project
 *.sublime-workspace
